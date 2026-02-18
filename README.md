@@ -1,4 +1,4 @@
-# Windows-AD-Fundamentals
+# Active Directory Domain Administration Lab (Windows Server / Azure)
 ## Overview
 This lab covers core Active Directory (AD) fundamentals by building and managing a real AD environment like it’s used in enterprise networks. Key focus areas include users/groups, OUs, authentication concepts (Kerberos), Group Policy, and basic AD security event review.
 
