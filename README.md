@@ -93,7 +93,7 @@ Groups simplify permission management by allowing administrators to assign acces
 - Configured folder permissions and assigned access using group-based security permissions
 - Enabled and disabled the user account
 
-  **Task 5:** Organizational Units (OU) & Delegation
+ **Task 5:** Organizational Units (OU) & Delegation
 
 **Goal:** Understand how enterprises logically organize Active Directory objects and apply delegated administrative permissions.
 
