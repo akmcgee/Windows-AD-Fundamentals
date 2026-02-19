@@ -87,31 +87,35 @@ Groups simplify permission management by allowing administrators to assign acces
 **Group Scopes:**
 - **Domain Local:** Permissions within a specific domain
 
+**Actions Performed:**  
+- Created a Security Group named **IT_Support** in Active Directory Users and Computers (ADUC)  
+- Added **ad_user1** as a member of the IT_Support group  
+- Configured folder permissions and assigned access using group-based security permissions
+- Enabled and disabled the user account
+
   **Task 5:** Organizational Units (OU) & Delegation
 
-**Goal:** Understand how enterprises logically organize Active Directory objects using Organizational Units (OUs).
+**Goal:** Understand how enterprises logically organize Active Directory objects and apply delegated administrative permissions.
 
 **Explanation:**  
-Organizational Units (OUs) are containers used in Active Directory to structure users, groups, and computers in a logical hierarchy. OUs allow administrators to:
+Organizational Units (OUs) are containers used in Active Directory to structure users, groups, and computers into logical departments. OUs allow administrators to:
 
-- Organize users and computers by department or role
+- Organize identities by business function
 - Apply Group Policy Objects (GPOs)
-- Delegate administrative permissions without granting full domain admin rights
+- Delegate limited administrative control without granting full domain admin privileges
 
 **Actions Performed:**  
 - Created Organizational Units:
   - HR
   - IT
   - Finance
-- Moved domain users into the appropriate OU containers
-- Configured delegation of control to provide limited administrative permissions on a selected OU
-- **Global:** Members from the same domain
-- **Universal:** Members across multiple domains
-
-**Actions Performed:**  
-- Created a Security Group named **IT_Support** in Active Directory Users and Computers (ADUC)  
-- Added **ad_user1** as a member of the IT_Support group  
-- Configured folder permissions and assigned access using group-based security permissions
-- Enabled and disabled the user account
+- Moved domain user accounts into appropriate OUs:
+  - AD User → IT OU
+  - HR User → HR OU
+  - Finance User → Finance OU
+- Used the **Delegation of Control Wizard** in Active Directory Users and Computers to assign scoped administrative permissions
+- Delegated limited control to HR User on the HR OU:
+  - Create, delete, and manage user accounts
+  - Reset user passwords and force password change at next logon
 
  
