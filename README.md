@@ -11,16 +11,17 @@ This lab covers core Active Directory (AD) fundamentals by building and managing
 
 ## Environment
 
-**Virtualization/Platform:** Azure
-**Domain Controller:** Windows server 2025
-**Client Machine(s):** Windows 10
-**Network Type:** (NAT / Host-only / Internal / Azure VNet)  
-**Domain Name:** corp.ashlab.local
-**IP Scheme:** (DC IP, Client IPs, DNS settings)
-
+**Virtualization/Platform:** Mircosoft Azure (Azure virtual machines)
+**Domain Controller:** Windows server 2025 (AD DS + DNS installed)
+**Client Machine(s):** Windows 10 Enterprise (Domain Joined)
+**Network Type:** Azure Virtual Network (VNet)
+*Domain Name:** corp.ashlab.local
+**IP Scheme:**   Domain Controller (DC): 172.17.0.4 (Private IP)
+   - Client VM: 172.17.0.5 (Private IP)
+   - DNS Settings: Client DNS pointed to Domain Controller (172.17.0.4)
 ## Tools Used
 - Server Manager
 - Active Directory Users and Computers (ADUC / dsa.msc)
 - Group Policy Management (gpmc.msc)
 - Event Viewer (eventvwr.msc)
-- Command line utilities (ipconfig, nslookup, gpupdate, whoami, etc.)
+- Command line utilities (ipconfig, nslookup, gpupdate, whoami, dnsflush,etc.)
