@@ -17,8 +17,8 @@ This lab covers core Active Directory (AD) fundamentals by building and managing
 **Network Type:** Azure Virtual Network (VNet)
 *Domain Name:** corp.ashlab.local
 **IP Scheme:**   Domain Controller (DC): 172.17.0.4 (Private IP)
-   - Client VM: 172.17.0.5 (Private IP)
-   - DNS Settings: Client DNS pointed to Domain Controller (172.17.0.4)
+Client VM: 172.17.0.5 (Private IP)
+DNS Settings: Client DNS pointed to Domain Controller (172.17.0.4)
 ## Tools Used
 - Server Manager
 - Active Directory Users and Computers (ADUC / dsa.msc)
