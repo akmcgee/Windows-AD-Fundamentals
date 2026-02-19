@@ -71,7 +71,28 @@ User accounts in Active Directory represent identities used for authentication a
 **Actions Performed:**  
 - Created a new domain user:
   - Username: ad_user1  
-- Configured password and account settings  
-- Enabled and disabled the user account  
-- Reset the user password  
-- Logged into a domain-joined Windows 10 Enterprise client using the new user credentials
+- Configured password and account settings
+
+**Task 4:** Understand Groups and Group Scope
+
+**Goal:** Learn how group-based access control works in Active Directory.
+
+**Explanation:**  
+Groups simplify permission management by allowing administrators to assign access rights to multiple users at once instead of configuring permissions individually.
+
+**Group Types:**
+- **Security Groups:** Used to assign permissions to resources
+- **Distribution Groups:** Used for email distribution only
+
+**Group Scopes:**
+- **Domain Local:** Permissions within a specific domain
+- **Global:** Members from the same domain
+- **Universal:** Members across multiple domains
+
+**Actions Performed:**  
+- Created a Security Group named **IT_Support** in Active Directory Users and Computers (ADUC)  
+- Added **ad_user1** as a member of the IT_Support group  
+- Configured folder permissions and assigned access using group-based security permissions
+- Enabled and disabled the user account
+
+ 
