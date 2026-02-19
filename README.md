@@ -86,6 +86,25 @@ Groups simplify permission management by allowing administrators to assign acces
 
 **Group Scopes:**
 - **Domain Local:** Permissions within a specific domain
+
+  **Task 5:** Organizational Units (OU) & Delegation
+
+**Goal:** Understand how enterprises logically organize Active Directory objects using Organizational Units (OUs).
+
+**Explanation:**  
+Organizational Units (OUs) are containers used in Active Directory to structure users, groups, and computers in a logical hierarchy. OUs allow administrators to:
+
+- Organize users and computers by department or role
+- Apply Group Policy Objects (GPOs)
+- Delegate administrative permissions without granting full domain admin rights
+
+**Actions Performed:**  
+- Created Organizational Units:
+  - HR
+  - IT
+  - Finance
+- Moved domain users into the appropriate OU containers
+- Configured delegation of control to provide limited administrative permissions on a selected OU
 - **Global:** Members from the same domain
 - **Universal:** Members across multiple domains
 
