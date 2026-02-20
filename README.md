@@ -1,14 +1,15 @@
  🧪 Active Directory Enterprise Lab – Azure Deployment
 
 ## 📌 Overview
-This project demonstrates the deployment and administration of a Windows Active Directory environment hosted in Microsoft Azure.  
-The lab focuses on identity management, organizational structure, delegated administration, and Kerberos-based domain authentication.
 
-The goal of this project was to simulate real-world enterprise administration tasks performed by IT support and junior system administrators while reinforcing security-focused Active Directory concepts.
+This project demonstrates the deployment, administration, and security monitoring of a Windows Active Directory environment hosted in Microsoft Azure.  
+The lab focuses on identity management, organizational structure, delegated administration, Group Policy enforcement, and Kerberos-based domain authentication with real-world security logging analysis.
+
+The goal of this project was to simulate enterprise-level administration and security tasks performed by IT support specialists, junior system administrators, and entry-level SOC analysts while reinforcing security-focused Active Directory concepts.
 
 ---
 
-## 🏗️ Lab Environment
+🏗️ Lab Environment
 
 **Virtualization/Platform:** Microsoft Azure (Azure Virtual Machines)  
 **Domain Controller:** Windows Server 2025 (AD DS + DNS installed)  
@@ -17,24 +18,37 @@ The goal of this project was to simulate real-world enterprise administration ta
 **Domain Name:** corp.ashlab.local  
 
 **IP Scheme:**
-- Domain Controller (DC01): 172.17.0.4 (Private IP)
-- Client VM: Domain-joined Windows 10
-- DNS Settings: Client DNS pointed to Domain Controller
+
+- Domain Controller (DC01): 172.17.0.4 (Private IP)  
+- Client VM: Domain-joined Windows 10  
+- DNS Settings: Client DNS pointed to Domain Controller  
 
 ---
 
-## 🎯 Skills Demonstrated
+🎯 Skills Demonstrated
 
-- Active Directory Domain Services (AD DS) Administration
-- Organizational Unit (OU) Design & Delegation of Control
-- Role-Based Access Control (RBAC)
-- NTFS Permission Management
-- Kerberos Authentication Analysis
-- Azure Infrastructure Deployment
-- Domain User Lifecycle Management
-- Troubleshooting Domain Join & Identity Issues
+- Active Directory Domain Services (AD DS) Administration  
+- Organizational Unit (OU) Design & Delegation of Control  
+- Role-Based Access Control (RBAC)  
+- NTFS Permission Management  
+- Group Policy Management & Password Policy Enforcement  
+- Active Directory Security Log Analysis (Event IDs 4624 & 4768)  
+- Kerberos Authentication Monitoring  
+- Azure Infrastructure Deployment  
+- Domain User Lifecycle Management  
+- Troubleshooting Domain Join & Identity Issues  
 
 ---
+
+🔐 Key Concepts Covered
+
+- Centralized Identity Management  
+- OU-Based Organizational Structure  
+- Delegated Administrative Permissions  
+- Group Policy Security Enforcement  
+- Kerberos Ticket Granting Process  
+- Active Directory Authentication Monitoring  
+- Enterprise Access Control Models  
 
 ## 🔐 Key Concepts Covered
 
