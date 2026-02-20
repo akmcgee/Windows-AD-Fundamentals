@@ -1,24 +1,48 @@
-# Active Directory Domain Administration Lab (Windows Server / Azure)
-## Overview
-This lab covers core Active Directory (AD) fundamentals by building and managing a real AD environment like it’s used in enterprise networks. Key focus areas include users/groups, OUs, authentication concepts (Kerberos), Group Policy, and basic AD security event review.
+ 🧪 Active Directory Enterprise Lab – Azure Deployment
 
-## Lab Goals
-- Build familiarity with AD concepts and architecture (domain, DC, DNS)
-- Manage identities (users, groups, computers)
-- Organize resources using Organizational Units (OUs)
-- Apply policies with Group Policy (GPO)
-- Review AD-related security logs/events
+## 📌 Overview
+This project demonstrates the deployment and administration of a Windows Active Directory environment hosted in Microsoft Azure.  
+The lab focuses on identity management, organizational structure, delegated administration, and Kerberos-based domain authentication.
 
-## Environment
+The goal of this project was to simulate real-world enterprise administration tasks performed by IT support and junior system administrators while reinforcing security-focused Active Directory concepts.
 
-**Virtualization/Platform:** Mircosoft Azure (Azure virtual machines)
-**Domain Controller:** Windows server 2025 (AD DS + DNS installed)
-**Client Machine(s):** Windows 10 Enterprise (Domain Joined)
-**Network Type:** Azure Virtual Network (VNet)
-*Domain Name:** corp.ashlab.local
-**IP Scheme:**   Domain Controller (DC): 172.17.0.4 (Private IP)
-Client VM: 172.17.0.5 (Private IP)
-DNS Settings: Client DNS pointed to Domain Controller (172.17.0.4)
+---
+
+## 🏗️ Lab Environment
+
+**Virtualization/Platform:** Microsoft Azure (Azure Virtual Machines)  
+**Domain Controller:** Windows Server 2025 (AD DS + DNS installed)  
+**Client Machine(s):** Windows 10 Enterprise (Domain Joined)  
+**Network Type:** Azure Virtual Network (VNet)  
+**Domain Name:** corp.ashlab.local  
+
+**IP Scheme:**
+- Domain Controller (DC01): 172.17.0.4 (Private IP)
+- Client VM: Domain-joined Windows 10
+- DNS Settings: Client DNS pointed to Domain Controller
+
+---
+
+## 🎯 Skills Demonstrated
+
+- Active Directory Domain Services (AD DS) Administration
+- Organizational Unit (OU) Design & Delegation of Control
+- Role-Based Access Control (RBAC)
+- NTFS Permission Management
+- Kerberos Authentication Analysis
+- Azure Infrastructure Deployment
+- Domain User Lifecycle Management
+- Troubleshooting Domain Join & Identity Issues
+
+---
+
+## 🔐 Key Concepts Covered
+
+- Centralized Identity Management
+- OU-Based Organizational Structure
+- Delegated Administrative Permissions
+- Kerberos Ticket Granting Process
+- Enterprise Access Control Models
 
 **Task 1:** Understand Active Directory Architecture
 
