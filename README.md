@@ -172,6 +172,52 @@ Kerberos authentication is commonly targeted in cybersecurity attacks such as Pa
   - forwardable
   - renewable
   - initial
+  - 
+  **Task 7:** Group Policy Fundamentals
+
+**Goal:** Understand how Group Policy enforces security configurations across a domain environment.
+
+**Explanation:**  
+Group Policy Objects (GPOs) allow administrators to centrally manage security settings within Active Directory. Password policies are commonly enforced through GPOs to ensure users follow secure authentication practices and to reduce the risk of weak credentials.
+
+**Actions Performed:**  
+- Opened Group Policy Management Console using **gpmc.msc**  
+- Created a new Group Policy Object named **Password Policy**  
+- Configured password complexity under:
+  - Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy  
+- Linked the GPO to the **corp.ashlab.local** domain  
+- Verified Security Filtering set to **Authenticated Users**  
+- Ran **gpupdate /force** on the Windows 10 domain-joined client  
+- Validated enforcement by attempting a weak password change which was blocked by domain policy
+
+
+---
+
+**Task 8:** AD Security Logs & Monitoring
+
+**Goal:** Identify Active Directory authentication events using Windows Security logs for monitoring and analysis.
+
+**Explanation:**  
+Active Directory records authentication activity within the Windows Security log. Monitoring Event IDs such as 4624 and 4768 helps administrators and SOC analysts track successful logins and Kerberos ticket activity across the domain.
+
+**Actions Performed:**  
+- Opened Event Viewer using **eventvwr.msc**  
+- Navigated to:
+  - Windows Logs → Security  
+- Applied log filter for Event IDs:
+  - 4624 (Successful Login)
+  - 4768 (Kerberos TGT Request)  
+- Reviewed authentication details from Event ID 4624:
+  - Username: **azureadmin**
+  - Logon Type: **3 (Network Logon)**
+  - Logon Process: **Kerberos**
+  - Domain: **CORP.ASHLAB.LOCAL**  
+- Reviewed Kerberos ticket request from Event ID 4768:
+  - Username: **azureadmin**
+  - Service Name: **krbtgt**
+  - Target Domain: **CORP**
+  - Status: **0x0 (Success)**
+  - Ticket Encryption Type: **0x12 (AES)**  
   - pre_authent
 - KDC (Key Distribution Center) identified as **DC01**
 - Successful validation of domain authentication workflow using Kerberos
