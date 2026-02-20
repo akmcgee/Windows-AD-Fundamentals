@@ -118,4 +118,36 @@ Organizational Units (OUs) are containers used in Active Directory to structure 
   - Create, delete, and manage user accounts
   - Reset user passwords and force password change at next logon
 
- 
+ **Task 6:** Domain Authentication & Kerberos Basics
+
+**Goal:** Understand how users authenticate in Active Directory environments using Kerberos.
+
+**Explanation:**  
+Active Directory uses the Kerberos authentication protocol to securely verify identities.  
+During authentication:
+
+- A user logs into a domain-joined system
+- The Domain Controller verifies credentials
+- A Ticket Granting Ticket (TGT) is issued
+- Service tickets are used to access network resources
+
+Kerberos authentication is commonly targeted in cybersecurity attacks such as Pass-the-Ticket and Kerberoasting.
+
+**Actions Performed:**  
+- Logged into the domain environment as a domain-authenticated user
+- Opened Command Prompt with administrative privileges
+- Executed the following command:
+
+- Observed active Kerberos tickets issued by the Domain Controller
+
+**Findings:**  
+- Verified Kerberos authentication to domain **CORP.ASHLAB.LOCAL**
+- Confirmed Ticket Granting Ticket (TGT) issued by **krbtgt/CORP.ASHLAB.LOCAL**
+- Encryption type observed: AES-256-CTS-HMAC-SHA1-96
+- Ticket flags included:
+  - forwardable
+  - renewable
+  - initial
+  - pre_authent
+- KDC (Key Distribution Center) identified as **DC01**
+- Successful validation of domain authentication workflow using Kerberos
